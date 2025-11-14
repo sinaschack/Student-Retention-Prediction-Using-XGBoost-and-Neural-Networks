@@ -9,9 +9,9 @@ The project demonstrates skills in data preprocessing, feature engineering, mode
 
 ## Data
 
-The dataset includes student demographics, engagement, and academic performance across three stages of the study journey. Key features include age, gender, nationality, course information, attendance, and assessment results.
+**The dataset includes student demographics, engagement, and academic performance across three stages of the study journey. Key features include age, gender, nationality, course information, attendance, and assessment results.**
 
-This dataset is 100% synthetic and was generated solely for demonstration purposes.
+**This dataset is 100% synthetic and was generated solely for demonstration purposes.**
 
 It does NOT contain any real data and has absolutely no resemblance to the original dataset, which is protected under a Non-Disclosure Agreement (NDA). All values, names, and attributes in this dataset are fictitious and do not represent any real individuals, organizations, or proprietary information.
 
