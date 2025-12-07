@@ -96,4 +96,4 @@ This project demonstrates practical skills in:
 * **Interpretability & Visualization:** Used **PCA** and **t-SNE** for dimensionality reduction, visualization, and cluster analysis.
 * **Python Ecosystem & Tools:** **pandas**, **NumPy**, **Scikit-learn**, **XGBoost**, **Optuna**, **TensorFlow/Keras**, **Keras Tuner**, **matplotlib**, **seaborn**.
 
-**Impact:** This analysis extracts actionable insights from student data, identifies at-risk individuals across key academic stages, and supports **data-driven decision-making** to maximize student retention and program success.
+**Impact:** This analysis extracts actionable insights from student data, identifies at-risk individuals across key academic stages, and supports **data-driven decision-making** to maximize student retention and programme success.
