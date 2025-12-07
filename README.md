@@ -29,7 +29,7 @@ The dataset includes student demographics, engagement, and academic performance 
 
 -----
 
-## ⚙️ Approach: The Three-Stage Pipeline
+## Approach: The Three-Stage Pipeline
 
 The analysis follows a strict, progressive machine learning pipeline, focusing on model optimization across the academic timeline:
 
@@ -39,19 +39,8 @@ The analysis follows a strict, progressive machine learning pipeline, focusing o
 | **Stage 2: Mid-stage Optimization** | Tune hyperparameters to maximize **Recall** using mid-stage data features. | Advanced optimization with **Optuna** (XGBoost) and **Keras Tuner** (NN). |
 | **Stage 3: Late-stage Evaluation** | Validate the best models on the final, most predictive feature set. | Final model retraining and comprehensive metric comparison. |
 
------
 
-## 🛠️ Key Skills Demonstrated
-
-  * **Supervised Machine Learning:** Implementation of **XGBoost** and **Deep Neural Networks**.
-  * **Data Preparation:** Feature Engineering, robust outlier detection (**Isolation Forest**), and handling imbalanced data (class weighting).
-  * **Model Optimization:** Hyperparameter tuning using specialized frameworks **Optuna** and **Keras Tuner**.
-  * **Model Evaluation:** Comprehensive metric analysis focusing on **Recall (Class 0)**, **AUC-ROC**, and Confusion Matrix interpretation.
-  * **Interpretability & Visualization:** Used **PCA** and **t-SNE** for dimensionality reduction, visualization, and cluster analysis to gain deeper model insights.
-
------
-
-## 🏗️ File Structure
+## File Structure
 
 ```
 .
@@ -73,7 +62,7 @@ The analysis follows a strict, progressive machine learning pipeline, focusing o
 
 -----
 
-## 🚀 Getting Started
+##  How to run the code
 
 1.  **Clone the repository:**
 
@@ -96,7 +85,7 @@ The analysis follows a strict, progressive machine learning pipeline, focusing o
 
 Here is the dedicated **Skills & Employer Highlights** section, ready for your professional documents:
 
-## ⭐ Skills & Employer Highlights
+## Skills & Employer Highlights
 
 This project demonstrates practical skills in:
 
