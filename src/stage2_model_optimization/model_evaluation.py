@@ -1,5 +1,3 @@
-# stage2_model_optimization/model_evaluation.py
-
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, roc_curve, roc_auc_score, classification_report
 
