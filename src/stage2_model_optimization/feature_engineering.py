@@ -1,5 +1,3 @@
-# stage2_model_optimization/feature_engineering.py
-
 import pandas as pd
 import numpy as np
 
