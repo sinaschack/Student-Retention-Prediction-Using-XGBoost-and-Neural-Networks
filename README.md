@@ -1,57 +1,110 @@
-# Student-Retention-Prediction-Using-XGBoost-and-Neural-Networks
-Predict student dropout using supervised learning with XGBoost and neural networks. Features data preprocessing, feature engineering, model tuning, evaluation, and actionable insights for early interventions.
+# Student Retention Prediction Using XGBoost and Neural Networks
+
+**Predict student dropout using supervised learning with XGBoost and Neural Networks.** This project provides **actionable insights** for early student interventions by identifying at-risk individuals across different academic phases.
+
+-----
 
 ## Project Overview
 
-This project applies **supervised learning techniques** to predict student dropout risk in international education programs. Using **XGBoost and Neural Networks**, the analysis identifies at-risk students early, enabling timely interventions and data-driven decisions to improve retention and academic outcomes.
+This project applies **supervised learning techniques** to predict student dropout risk in international education programs. Using **XGBoost** and **Deep Neural Networks (DNN)**, the analysis aims to maximize **Recall for the "Dropout" class (Class 0)**, enabling timely interventions and data-driven decisions to improve retention and academic outcomes.
 
-The project demonstrates skills in data preprocessing, feature engineering, model training and evaluation, hyperparameter tuning, and interpretation of results for actionable insights.
+The project demonstrates a comprehensive machine learning pipeline, from data preparation through advanced model optimization and interpretation.
 
-## Data
+-----
 
-**The dataset includes student demographics, engagement, and academic performance across three stages of the study journey. Key features include age, gender, nationality, course information, attendance, and assessment results.**
+## Data Source and Preprocessing
 
-**This dataset is 100% synthetic and was generated solely for demonstration purposes.**
+The dataset includes student demographics, engagement, and academic performance features, segmented across **three stages of the study journey**. Key features cover **age, gender, nationality, course information, attendance, and assessment results.**
 
-It does NOT contain any real data and has absolutely no resemblance to the original dataset, which is protected under a Non-Disclosure Agreement (NDA). All values, names, and attributes in this dataset are fictitious and do not represent any real individuals, organizations, or proprietary information.
+> **Important Notice: Synthetic Data Only**
+>
+> This dataset is **100% synthetic** and was generated solely for demonstration purposes. It does not contain any real data.
 
-## Approach
+### Key Preprocessing Steps
 
-The analysis follows these steps:
+  * **Cleaning & Anomaly Detection:** Handled missing values, removed duplicates, and employed the **Isolation Forest** algorithm to identify and manage anomalies.
+  * **Feature Engineering:** Derived new, powerful predictive features, including module completion counts and student **attendance rates**.
+  * **Imbalance Handling:** Utilized **class weighting** across both models to effectively address the highly imbalanced nature of the dataset (many more completers than dropouts).
+  * **Exploratory Data Analysis (EDA):** Performed initial visualization of distributions, feature relationships, and correlations relevant to dropout risk.
 
-### Data Preprocessing and Cleaning
+-----
 
-* Handle missing values and duplicates
-* Remove anomalies using statistical methods and machine learning (**Isolation Forest**)
+## ⚙️ Approach: The Three-Stage Pipeline
 
-### Feature Engineering
+The analysis follows a strict, progressive machine learning pipeline, focusing on model optimization across the academic timeline:
 
-* Derive new features like module completion counts and attendance rates
+| Stage | Focus | Key Techniques |
+| :--- | :--- | :--- |
+| **Stage 1: Baseline** | Establish initial model performance metrics. | Default XGBoost and NN training. |
+| **Stage 2: Mid-stage Optimization** | Tune hyperparameters to maximize **Recall** using mid-stage data features. | Advanced optimization with **Optuna** (XGBoost) and **Keras Tuner** (NN). |
+| **Stage 3: Late-stage Evaluation** | Validate the best models on the final, most predictive feature set. | Final model retraining and comprehensive metric comparison. |
 
-### Exploratory Data Analysis (EDA)
+-----
 
-* Visualize distributions and feature relationships
-* Identify patterns and correlations relevant to dropout risk
+## 🛠️ Key Skills Demonstrated
 
-### Modeling
+  * **Supervised Machine Learning:** Implementation of **XGBoost** and **Deep Neural Networks**.
+  * **Data Preparation:** Feature Engineering, robust outlier detection (**Isolation Forest**), and handling imbalanced data (class weighting).
+  * **Model Optimization:** Hyperparameter tuning using specialized frameworks **Optuna** and **Keras Tuner**.
+  * **Model Evaluation:** Comprehensive metric analysis focusing on **Recall (Class 0)**, **AUC-ROC**, and Confusion Matrix interpretation.
+  * **Interpretability & Visualization:** Used **PCA** and **t-SNE** for dimensionality reduction, visualization, and cluster analysis to gain deeper model insights.
 
-* Train **XGBoost** and **Neural Network** models
-* Optimize hyperparameters with tuning techniques (**Optuna**, **Keras Tuner**)
-* Evaluate using accuracy, AUC, confusion matrix, precision, recall, and F1-score
+-----
 
-### Dimensionality Reduction and Visualization
+## 🏗️ File Structure
 
-* Use **PCA** and **t-SNE** for model interpretation and cluster analysis
+```
+.
+├── data/
+│   └── synthetic_student_data_25000.csv
+├── notebooks/
+│   ├── Stage1_predicting_student_dropout_xgboost_nn.ipynb
+│   ├── Stage2_predicting_student_dropout_xgboost_nn.ipynb
+│   └── Stage3_predicting_student_dropout_xgboost_nn.ipynb
+├── requirements/
+│   ├── stage1_baseline.txt
+│   ├── stage2_optimization.txt
+│   └── stage3_evaluation.txt
+└── src/
+    ├── stage1_baseline_modelling/
+    ├── stage2_model_optimization/
+    └── stage_3_evaluation_comparison/
+```
 
-### Insights
+-----
 
-* Identify at-risk students across different academic stages
-* Highlight key predictive features and trends
+## 🚀 Getting Started
 
-## Key Skills Demonstrated
+1.  **Clone the repository:**
 
-* Supervised machine learning: **XGBoost**, **Neural Networks**
-* Data preprocessing, feature engineering, and handling imbalanced datasets
-* Model evaluation and hyperparameter optimization
-* Dimensionality reduction and visualization (**PCA**, **t-SNE**)
-* Actionable insights for decision-making
+    ```bash
+    git clone https://github.com/your-username/Student-Retention-Prediction-Using-XGBoost-and-Neural-Networks.git
+    cd Student-Retention-Prediction-Using-XGBoost-and-Neural-Networks
+    ```
+
+2.  **Install dependencies:**
+
+    ```bash
+    # Install dependencies for the final stage, which covers all required libraries.
+    pip install -r requirements/stage3_evaluation.txt
+    ```
+
+3.  **Run the notebooks:**
+    Launch Jupyter and execute the notebooks in numerical order (`Stage1` $\rightarrow$ `Stage2` $\rightarrow$ `Stage3`) located in the `notebooks/` directory.
+
+-----
+
+Here is the dedicated **Skills & Employer Highlights** section, ready for your professional documents:
+
+## ⭐ Skills & Employer Highlights
+
+This project demonstrates practical skills in:
+
+* **Supervised Learning:** Building and evaluating robust models using **XGBoost** and **Deep Neural Networks**.
+* **Model Optimization:** Advanced hyperparameter tuning with specialized frameworks **Optuna** and **Keras Tuner**.
+* **Data Preparation & Engineering:** Feature Engineering, robust outlier detection using **Isolation Forest**, and handling imbalanced data (class weighting).
+* **Model Evaluation:** Focused on business-critical metrics like **Recall (Class 0)** and **AUC-ROC** for intervention systems.
+* **Interpretability & Visualization:** Used **PCA** and **t-SNE** for dimensionality reduction, visualization, and cluster analysis.
+* **Python Ecosystem & Tools:** **pandas**, **NumPy**, **Scikit-learn**, **XGBoost**, **Optuna**, **TensorFlow/Keras**, **Keras Tuner**, **matplotlib**, **seaborn**.
+
+**Impact:** This analysis extracts actionable insights from student data, identifies at-risk individuals across key academic stages, and supports **data-driven decision-making** to maximize student retention and program success.
