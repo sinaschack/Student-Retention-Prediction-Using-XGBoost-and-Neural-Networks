@@ -1,5 +1,3 @@
-# stage2_model_optimization/model_hyperparameter_tuning.py
-
 import optuna
 from xgboost import XGBClassifier
 from sklearn.model_selection import StratifiedKFold
