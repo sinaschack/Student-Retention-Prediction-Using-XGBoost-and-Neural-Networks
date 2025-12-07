@@ -1,0 +1,53 @@
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+
+# Virtual environments
+env/
+.venv/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Data files (ignore large datasets that you do not want to commit to Git)
+data/
+*.csv
+*.xlsx
+
+# IDE configuration files (for common editors like VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+*.lock
+*.egg-info
+dist/
+build/
+
+# Runtime files (for cloud environments like Heroku, etc.)
+runtime.txt
+
+# Test directories
+test/
+tests/
+
+# Output directories
+outputs/
+
+# Other files/folders that might be generated during execution
+*.dat
+*.zip
+*.tar.gz
