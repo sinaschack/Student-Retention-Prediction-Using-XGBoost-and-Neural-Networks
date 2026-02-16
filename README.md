@@ -18,7 +18,7 @@ The dataset includes student demographics, engagement, and academic performance 
 
 > **Important Notice: Synthetic Data Only**
 >
-> This dataset is **100% synthetic** and was generated solely for demonstration purposes. It does not contain any real data.
+> This dataset is **100% synthetic** and was generated solely for demonstration purposes. It does not contain any real data. This is due to confidentiality and NDA restrictions.
 
 ### Key Preprocessing Steps
 
